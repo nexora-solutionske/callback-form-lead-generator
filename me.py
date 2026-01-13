@@ -5,8 +5,8 @@ import os
 import re
 
 # --- CONFIGURATION ---
-API_KEY = "AIzaSyBcVwvF8CXVk7KcnS77KPl4FSMYUY7KtlU"
-SEARCH_ENGINE_ID = "21c7978c655e6427e"
+API_KEY = "XXXXXXX"
+SEARCH_ENGINE_ID = "XXXXXXX"
 
 # To get 500+ leads, we use multiple queries. 
 # Google limits each query to 100 results. 10 queries = 1,000 potential results.
@@ -187,5 +187,6 @@ if __name__ == "__main__":
                 scraped_history.add(link)
                 save_to_history(link)
                 time.sleep(1.2) # Polite delay
+
 
     print(f"\n--- [FINISHED] Total Leads in CSV: {get_next_lead_number() - 1} ---")
